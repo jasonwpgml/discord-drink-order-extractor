@@ -22,7 +22,7 @@ from discord_drink_order_extractor import (
     save_menu_aliases,
 )
 
-st.set_page_config(page_title="Discord 음료 주문 추출기", layout="wide")
+st.set_page_config(page_title="DrinkLister", layout="wide")
 
 DEFAULT_SAMPLE = """[오후 3:20] 제이슨: 아아 라지 2잔, 하나는 샷추가
 민수 — 오후 3:21
@@ -107,7 +107,7 @@ def build_csv_bytes(orders: list[Any]) -> bytes:
     return output.getvalue().encode("utf-8-sig")
 
 
-st.title("Discord 음료 주문 추출기")
+st.title("DrinkLister")
 st.caption("Discord 메시지를 붙여넣으면 주문자·메뉴·옵션을 웹에서 바로 분석합니다.")
 
 st.subheader("1. 입력")
