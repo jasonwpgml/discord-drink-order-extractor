@@ -11,7 +11,7 @@ from typing import Any
 
 import streamlit as st
 
-from discord_drink_order_extractor import (
+from drinklister import (
     MENU_ALIASES,
     extract_orders,
     is_unconfirmed_order,
